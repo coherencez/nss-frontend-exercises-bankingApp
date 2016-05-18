@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Banking Application</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<label for="field">Banking Application:</label>
+	<fieldset>
+		<legend>Enter your personal information</legend>
+			<section class="info">
+				<label for="firstName">First Name: <input type="text" id="firstName" placeholder="John" autofocus></label>
+				<label for="middleInit">Middle Initial: <input type="text" maxlength="3" id="middleInit" placeholder="A"></label>
+				<label for="lastName">Last Name: <input type="text" id="lastName" placeholder="Doe"></label>
+				<label for="address">Enter your address: <input type="text" id="address" placeholder="123 Example Rd."> <input type="text" id="cityState" placeholder="City, State Zip"></label>
+			</section>
+			<section class="info">
+				<label for="occupation">Occupation: <input type="text" id="occupation"></label>
+				<label for="employer">Current employer: <input type="text" id="employer"></label>
+				<label for="employerAddr">Employer address: <input type="text" id="employerAddr" placeholder="123 Example Rd."> <input type="text" id="employerAddr" placeholder="City, State Zip"></label>
+			</section>
+	</fieldset>
+	<fieldset>
+		<legend>Loan options:</legend>
+
+			<select name="Loan Type" id="loanType">
+				<option value="" disabled selected>Please select loan type</option>
+				<option value="Commercial">Commercial</option>
+				<option value="Real estate">Real Estate</option>
+				<option value="Personal">Personal</option>
+				<option value="Mortgage">Mortgage</option>
+			</select>
+		<label for="loanAmount">Requested amount: <input type="text" id="loanAmount" placeholder="100,000"></label>
+		<section class="optionList" id="duration">
+			<label for="loanDuration"><strong>Loan duration: </strong></label>
+				<section class="alignmentFix"></section>
+
+				<label for="loanDuration">5 years <input type="radio" name="loanDuration" id="loanDuration" value=""></label>
+				<label for="loanDuration">15 years <input type="radio" name="loanDuration" id="loanDuration" value=""></label>
+				<label for="loanDuration">30 years <input type="radio" name="loanDuration" id="loanDuration" value=""></label>
+
+		</section>
+		<section class="optionList">
+			<label for="dPayment"><strong>Options: </strong></label>
+				<label for="dPayment">Down Payment <input type="checkbox" name="dPayment" id="dPayment" value=""></label>
+				<label for="ooState">Out-of-state resident <input type="checkbox" name="ooState" id="ooState" value=""></label>
+				<label for="married">Married <input type="checkbox" name="married" id="married" value=""></label>
+				<label for="cosign">I have a co-signer <input type="checkbox" name="cosign" id="cosign" value=""></label>
+		</section>
+	</fieldset>
+	<fieldset>
+		<legend>Questions &amp; Comments: </legend>
+			<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+	</fieldset>
+	<fieldset>
+		<legend>Additional Info:</legend>
+			<label for="email">Email: <input type="email" name="email" id="email" placeholder="jon@example.com"></label>
+			<label for="tel">Cell phone: <input type="tel" name="tel" placeholder="(615)555-5555" maxlength="15"></label>
+			<label for="linkdIN">https://www.linkedin.com/	<input type="text" name="linkdIN" placeholder="example123"></label>
+	</fieldset>
+
+</body>
+</html>
