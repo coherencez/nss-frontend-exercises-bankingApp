@@ -18,7 +18,10 @@ label {
 	padding: 5px;
 }
 
-
+h4 {
+	margin: auto;
+	text-align: center;
+}
 
 section.optionList {
 	display: inline-block;
