@@ -11,10 +11,10 @@
 	<fieldset>
 		<legend><strong>Enter your personal information</strong></legend>
 			<section class="info">
-				<label for="firstName">First Name: <input type="text" id="firstName" placeholder="John" autofocus></label>
-				<label for="middleInit">Middle Initial: <input type="text" maxlength="3" id="middleInit" placeholder="A"></label>
-				<label for="lastName">Last Name: <input type="text" id="lastName" placeholder="Doe"></label>
-				<label for="address">Enter your address: <input type="text" id="address" placeholder="123 Example Rd."> <input type="text" id="cityState" placeholder="City, State Zip"></label>
+				<label for="firstName">First Name: <input type="text" id="firstName" placeholder="John" autofocus required></label>
+				<label for="middleInit">Middle Initial: <input type="text" maxlength="3" id="middleInit" placeholder="A" required="true"></label>
+				<label for="lastName">Last Name: <input type="text" id="lastName" placeholder="Doe" required="true"></label>
+				<label for="address">Enter your address: <input type="text" id="address" placeholder="123 Example Rd." required="true"> <input type="text" id="cityState" placeholder="City, State Zip" required="true"></label>
 			</section>
 			<section class="info">
 				<label for="occupation">Occupation: <input type="text" id="occupation"></label>
@@ -56,11 +56,14 @@
 	</fieldset>
 	<fieldset>
 		<legend><strong>Additional Info</strong></legend>
-			<label for="email">Email: <input type="email" name="email" id="email" placeholder="jon@example.com"></label>
-			<label for="tel">Cell phone: <input type="tel" name="tel" placeholder="(615)555-5555" maxlength="15"></label>
+			<label for="email">Email: <input type="email" name="email" id="email" placeholder="jon@example.com" required></label>
+			<label for="tel">Cell phone: <input type="tel" name="tel" placeholder="(615)555-5555" maxlength="15" required></label>
 			<label for="linkdIN">https://www.linkedin.com/	<input type="text" name="linkdIN" placeholder="example123"></label>
-			<button>Submit</button>
 	</fieldset>
+		<section class="button">
+			<button>Submit</button>
+		</section>
+
 
 </body>
 </html>

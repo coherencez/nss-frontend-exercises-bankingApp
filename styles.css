@@ -1,3 +1,5 @@
+*:focus {outline: none;}
+
 body {
 	margin: 15px;
 	padding: 5px;
@@ -31,6 +33,25 @@ section.optionList {
 section.alignmentFix {
 	display: block;
 	height: 30px;
+}
+
+section.button {
+	text-align: center;
+	margin: auto;
+	margin-top: 5px;
+}
+
+
+label input:focus:invalid {
+    background: #fff;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+label input:required:valid { 
+    background: #fff;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
 }
 
 
